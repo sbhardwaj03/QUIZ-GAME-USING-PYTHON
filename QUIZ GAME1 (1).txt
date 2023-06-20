@@ -1,0 +1,39 @@
+score = 0
+total_questions = 3
+
+def giveoption(w, x, y, z):
+    print("A. " + w)
+    print("B. " + x)
+    print("C. " + y)
+    print("D. " + z)
+
+ans = ["B", "A", "C"]
+
+print("What is the capital of France?")
+giveoption("London", "Paris", "Rome", "Madrid")
+Ans = input("Enter your answer: ").upper()
+if Ans == ans[0]:
+    score += 1
+    print("Correct!")
+else:
+    print("Incorrect!")
+
+print("\nWho painted the Mona Lisa?")
+giveoption("Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Claude Monet")
+Ans = input("Enter your answer: ").upper()
+if Ans == ans[1]:
+    score += 1
+    print("Correct!")
+else:
+    print("Incorrect!")
+
+print("\nWhat is the largest planet in our solar system?")
+giveoption("Venus", "Mars", "Jupiter", "Saturn")
+Ans = input("Enter your answer: ").upper()
+if Ans == ans[2]:
+    score += 1
+    print("Correct!")
+else:
+    print("Incorrect!")
+
+print("\nCongratulations! You completed the quiz. You scored", score, "out of", total_questions, ".")
